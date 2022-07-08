@@ -1,12 +1,11 @@
 var db = require('./connection')
 const express = require('express');
 const bodyParser = require('body-parser');
-// const request = require('request');
 var path = require('path');
 
 const app = express();
 
-// const http=require("http"); 
+
 const port = process.env.PORT || 3000;
 
 app.use(express.static(__dirname));
