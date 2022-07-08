@@ -1,0 +1,82 @@
+body{
+    background: url(/public/images/slide1.jpg);
+    background-size: cover;
+}
+#slides{  
+    font-family: 'Montserrat', sans-serif;
+    align-self: center;
+    background-size: cover;
+}
+.form{
+    padding-top: 5%;
+    padding-left: 33%;
+    padding-right: 33%;
+    padding-bottom: 5%;
+}
+.logo{
+    margin-top: 28px;
+    float: left;
+    margin-left: 13%;
+    align-self: center;
+    width: 85px;
+    height: 80px;
+}
+p{
+    padding-top: 45px;
+    margin-left: 20%;
+    font-size: 24px;
+    color: #4A649E;
+    font-weight: 700;
+}
+.carousel-item::-webkit-scrollbar{
+    display:none;
+}
+.carousel-item{
+    width: 100vh;
+    height: 100vh;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.main{
+    color: #06283D;
+    text-align: left;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 12%;
+    margin-bottom: 10%;
+    font-weight: 900;
+    word-spacing: 3px;
+}
+h3.h3{
+    font-weight: 900;
+}
+.form-heading{
+    text-align: center;
+    padding-bottom: 40px;
+    color: #06283D;
+    font-weight: bolder;
+}
+input{
+    height: 50px;
+}
+input.top{
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+  
+input.middle{
+    border-radius: 0px;
+    margin-bottom: -1px;
+}
+input.bottom{
+    margin-bottom: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    filter: invert(1);
+}
+.formdata{
+    padding-top: 30px;
+}

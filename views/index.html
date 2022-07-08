@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Carousel Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="../public/css/styles.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <section id = "slides">
+        <!-- slide 1 -->
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../public/images/logo_new.png" class="logo" alt="...">
+            <p>Design Avenue</p>
+            <div class="main">
+            <h3 class="h3">Start working with a company that can provide everything you need to generate awareness, work on ideas, and scale your business indefinitely</h3>
+            <div class="formdata">
+            <table class="table">  
+            <%if (data.name != undefined && data.phone != undefined && data.email != undefined) { %>
+                  <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                  </tr>
+                  <tr>
+                    <td><%= data.name %></td>
+                    <td><%= data.phone %></td>
+                    <td><%= data.email %></td>
+                  </tr>
+                <% } %>
+              </table>
+            </div>
+            </div>
+          </div>
+        
+          <!-- silde 2 -->
+          <div class="carousel-item">
+            <img src="../public/images/logo_new.png" class="logo" alt="...">
+            <p>Design Avenue</p>
+
+            <!-- sign up form -->
+            <div class="form-floating mb-3 form">
+            <form class="d-block w-100" action="/" method="post" alt="...">
+              
+    <h1 class="form-heading mb-3 font-weight-normal">Need a Digital Expert ?</h1>
+      
+      <input type="text" name="Name" class="form-control top" id="floatingInput" placeholder="Name" required autofocus autocomplete="off">
+      <input type="tel" pattern="[0-9]{10}" name="Phone" class="form-control middle" id="floatingInput" placeholder="Phone" oninvalid="this.setCustomValidity('Please Enter valid Phone number')" oninput="this.setCustomValidity('')" required autocomplete="off">
+      <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="Email" class="form-control bottom" id="floatingPassword" placeholder="Email" oninvalid="this.setCustomValidity('Please Enter valid Email')" oninput="this.setCustomValidity('')" required autocomplete="off">
+      <br>
+
+    <!-- sign up button -->
+    <input class="w-100 btn btn-lg btn-primary" type="submit" value="Sign up"/>
+    
+            </form>
+           
+          </div>
+          </div>
+        </div>
+        
+        <!-- carousel buttons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> 
+        <script src="" async defer></script>
+    </body>
+</html>
+
+
+
